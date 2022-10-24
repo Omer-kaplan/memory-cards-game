@@ -114,11 +114,11 @@ function drawCards() {
 
       $(cardOne.find("img.front-image")).attr(
         "src",
-        `/src/images/cards/${i}.png`
+        `/memory-cards-game/src/images/cards/${i}.png`
       );
       $(cardTwo.find("img.front-image")).attr(
         "src",
-        `/src/images/cards/${i}.png`
+        `/memory-cards-game/src/images/cards/${i}.png`
       );
 
       cardOne.on("mousedown", handleCardClick);
