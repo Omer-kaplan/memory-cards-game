@@ -1,0 +1,150 @@
+[data-role="card"] {
+  cursor: pointer;
+  height: 110px;
+  width: 95px;
+  padding: 0;
+  border: none;
+  transition: all 0.5s;
+  box-shadow: 1px 2px 5px 1px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: scale(1);
+}
+
+[data-role="card"].disabled {
+  pointer-events: none !important;
+}
+
+[data-role="card"]:hover {
+  box-shadow: 1px 1px 7px 3px rgb(0 123 255 / 38%);
+}
+
+[data-role="card"]:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.card-title {
+  color: #11387fc9;
+  font-weight: 800;
+}
+
+div.card-back {
+  width: 95px;
+  height: 125px;
+}
+
+div.card-back > img {
+  width: 95px;
+  height: 125px;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  right: 0;
+}
+
+div.card-back > img.front-image {
+  width: 96px;
+  height: 125px;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+#board {
+  display: none;
+}
+
+.game-settings {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration-card {
+  padding: 20px;
+  height: 470px;
+  width: 410px;
+}
+
+.registration-form {
+  flex-direction: column;
+}
+
+.registration-form > * {
+  width: 290px;
+}
+
+.input-label {
+  margin-top: 14px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.start-button {
+    width: 100%;
+    background-color: #11387fc9;
+    color: white;
+    font-weight: 500;
+}
+
+.start-button:hover, .start-button:focus {
+    background-color: #11387f80;
+    color: white;
+}
+
+.center-the-board {
+  display: flex;
+  justify-content: center;
+}
+
+.game-title {
+  font-size: 35px;
+  margin-bottom: 50px;
+  background-color: #11387fc9;
+  padding-right: 20px;
+  padding-left: 30px;
+  color: white;
+}
+
+@media (max-width: 630px) {
+  .game-title {
+    font-size: 20px;
+  }
+}
+
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error {
+  font-weight: bold;
+  color: #c41e3a;
+  font-size: 13px;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.game-info > *:not(:last-child) {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-right: dotted 1px white;
+}
+
+.restart-img {
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.restart-btn {
+  border: none;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+}
